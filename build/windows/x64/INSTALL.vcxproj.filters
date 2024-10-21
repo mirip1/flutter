@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mivel\OneDrive\Documents\Html LM\AplicacionesMoviles\interfaz_instagram\build\windows\x64\CMakeFiles\3c0460be00962b97157e859f49eca9b3\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D397DB6E-E4D6-3E8D-B6D2-30569A3C4C8A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
