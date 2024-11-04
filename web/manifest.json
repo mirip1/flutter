@@ -1,6 +1,6 @@
 {
-    "name": "interfaz_instagram",
-    "short_name": "interfaz_instagram",
+    "name": "ejerciciotres",
+    "short_name": "ejerciciotres",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

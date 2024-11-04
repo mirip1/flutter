@@ -1,1 +1,0 @@
- C:\\Users\\mivel\\OneDrive\\Documents\\Html\ LM\\AplicacionesMoviles\\interfaz_instagram\\.dart_tool\\flutter_build\\1b7e8b46f61540966ce5a984bf4be241\\native_assets.yaml: 

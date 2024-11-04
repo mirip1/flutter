@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/PaginaUsuario.dart';
+import 'screens/paginaUsuario.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,12 +8,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Actividad 4',
       
-      color: const Color.fromARGB(14, 0, 0, 0),
-      home: const PaginaUsuario(),
+      color: Color.fromARGB(14, 0, 0, 0),
+      home: PaginaUsuario(),
     );
   }
 }

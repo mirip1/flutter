@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/interfaz_instagram.iml" filepath="$PROJECT_DIR$/interfaz_instagram.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/interfaz_instagram_android.iml" filepath="$PROJECT_DIR$/android/interfaz_instagram_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejerciciotres.iml" filepath="$PROJECT_DIR$/ejerciciotres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/ejerciciotres_android.iml" filepath="$PROJECT_DIR$/android/ejerciciotres_android.iml" />
     </modules>
   </component>
 </project>
