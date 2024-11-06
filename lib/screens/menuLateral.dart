@@ -1,18 +1,19 @@
-import 'package:ejerciciotres/screens/paginaUsuario.dart';
+
 import 'package:flutter/material.dart';
-import 'enlace4.dart';
-import 'enlace3.dart';
-import 'enlace1.dart';
-import 'enlace2.dart';
+
 
 
 class MenuLateral extends StatelessWidget {
+  
   const MenuLateral({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
+    
     return Drawer(
       backgroundColor:const Color.fromARGB(255, 255, 144, 240), 
+      
       child: ListView(
         children: <Widget>[
           const UserAccountsDrawerHeader(
@@ -24,6 +25,19 @@ class MenuLateral extends StatelessWidget {
                         "https://wallpapers.com/images/featured/paisajes-2iz0murq98x75o3c.jpg"),
                     fit: BoxFit.cover)),
           ),
+           Ink(
+            color: Color.fromARGB(255, 234, 22, 206),
+            child: ListTile(
+              title: const Text(
+                "Actividad 3",
+                style: TextStyle(color: Colors.white),
+              ),
+              onTap: () {
+                  Navigator.pushNamed(context, '/');
+
+              },
+            ),
+          ),const SizedBox(height: 10),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
@@ -32,9 +46,8 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const PaginaUsuario()));
+                  Navigator.pushNamed(context, '/segunda');
+
               },
             ),
           ),const SizedBox(height: 10),
@@ -46,9 +59,8 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const Enlace1()));
+               Navigator.pushNamed(context, '/tercera');
+
               },
             ),
           ),const SizedBox(height: 10),
@@ -60,9 +72,8 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const Enlace2()));
+                    Navigator.pushNamed(context, '/cuarta');
+
               },
             ),
           ),
@@ -75,9 +86,8 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const Enlace3()));
+                  Navigator.pushNamed(context, '/quinta');
+
               },
             ),
           ),
@@ -90,9 +100,7 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => const Enlace4()));
+                Navigator.pushNamed(context, '/sexta');
               },
             ),
           ),

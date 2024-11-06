@@ -7,6 +7,7 @@ class Historias extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
+      
       children: [
         const SizedBox(width: 20),
         Column(
