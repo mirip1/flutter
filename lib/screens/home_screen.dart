@@ -55,10 +55,8 @@ class _Juego extends State<Juego> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('Juego '),
-        backgroundColor:Color.fromARGB(80, 253, 0, 219), 
       ),
       drawer: const MenuLateral(),
       body: Stack(

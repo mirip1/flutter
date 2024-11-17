@@ -9,7 +9,6 @@ class Enlace2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Segunda pantalla"),
-        backgroundColor:Color.fromARGB(80, 253, 0, 219), 
       ),
       drawer: const MenuLateral(),
       body: Center(

@@ -9,7 +9,7 @@ class Enlace4 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Cuarta pantalla"),
-        backgroundColor:Color.fromARGB(80, 253, 0, 219), 
+        
 
       ),
       drawer: const MenuLateral(),

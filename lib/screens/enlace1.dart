@@ -10,7 +10,6 @@ class Enlace1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Primera pantalla"),
-        backgroundColor:Color.fromARGB(80, 253, 0, 219), 
 
       ),
       drawer: const MenuLateral(),
