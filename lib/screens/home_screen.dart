@@ -11,7 +11,6 @@ class Juego extends StatefulWidget {
 }
 
 class _Juego extends State<Juego> {
-
   double randomX = 0;
   double randomY = 0;
   int puntos = 0;
@@ -56,7 +55,7 @@ class _Juego extends State<Juego> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Juego '),
+        title: const Text('Juego'),
       ),
       drawer: const MenuLateral(),
       body: Stack(
@@ -66,7 +65,7 @@ class _Juego extends State<Juego> {
             top: randomY,
             child: GestureDetector(
               onTap: () {
-                onImageTap();
+                mostrarSnackbar();
               },
               child: Image.asset(
                 'assets/Trollface.png',
@@ -103,7 +102,6 @@ class _Juego extends State<Juego> {
     );
   }
 
-
   void getRandomPosition() {
     Random random = Random();
     double anchura = MediaQuery.of(context).size.width - 55;
@@ -113,10 +111,19 @@ class _Juego extends State<Juego> {
     randomY = random.nextDouble() * altura;
   }
 
-  void onImageTap() {
+  void mostrarSnackbar() {
     puntos++;
     tiempo = 3;
     getRandomPosition();
-    setState(() {});
+    setState(() {
+      if (puntos > 0 && puntos % 10 == 0) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('¡Has alcanzado $puntos puntos!'),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      }
+    });
   }
 }

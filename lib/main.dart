@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ejerciciotres/screens/routes.dart'; 
+import 'package:ejerciciotres/routes/routes.dart'; 
 
 void main() => runApp(const MyApp());
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       routes: appRoutes, 
       theme: ThemeData(
         primaryColor: const Color.fromARGB(255, 194, 33, 243), 
-        scaffoldBackgroundColor: Colors.grey[200], 
+        scaffoldBackgroundColor: const Color.fromARGB(255, 242, 241, 193), 
         textTheme: const TextTheme(
           displayLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.blue),
           bodyLarge: TextStyle(fontSize: 16, color: Colors.black87),

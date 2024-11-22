@@ -1,19 +1,12 @@
-
 import 'package:flutter/material.dart';
 
-
-
 class MenuLateral extends StatelessWidget {
-  
   const MenuLateral({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
-    
     return Drawer(
-      backgroundColor:const Color.fromARGB(255, 255, 144, 240), 
-      
+      backgroundColor: const Color.fromARGB(255, 255, 144, 240),
       child: ListView(
         children: <Widget>[
           const UserAccountsDrawerHeader(
@@ -25,7 +18,7 @@ class MenuLateral extends StatelessWidget {
                         "https://wallpapers.com/images/featured/paisajes-2iz0murq98x75o3c.jpg"),
                     fit: BoxFit.cover)),
           ),
-           Ink(
+          Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
               title: const Text(
@@ -33,11 +26,11 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                  Navigator.pushNamed(context, '/');
-
+                Navigator.pushNamed(context, '/');
               },
             ),
-          ),const SizedBox(height: 10),
+          ),
+          const SizedBox(height: 10),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
@@ -46,11 +39,11 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                  Navigator.pushNamed(context, '/segunda');
-
+                Navigator.pushNamed(context, '/segunda');
               },
             ),
-          ),const SizedBox(height: 10),
+          ),
+          const SizedBox(height: 10),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
@@ -59,12 +52,12 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-               Navigator.pushNamed(context, '/tercera');
-
+                Navigator.pushNamed(context, '/tercera');
               },
             ),
-          ),const SizedBox(height: 10),
-             Ink(
+          ),
+          const SizedBox(height: 10),
+          Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
               title: const Text(
@@ -72,13 +65,12 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                    Navigator.pushNamed(context, '/cuarta');
-
+                Navigator.pushNamed(context, '/cuarta');
               },
             ),
           ),
           const SizedBox(height: 10),
-           Ink(
+          Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
               title: const Text(
@@ -86,8 +78,7 @@ class MenuLateral extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                  Navigator.pushNamed(context, '/quinta');
-
+                Navigator.pushNamed(context, '/quinta');
               },
             ),
           ),
@@ -101,6 +92,45 @@ class MenuLateral extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.pushNamed(context, '/sexta');
+              },
+            ),
+          ),
+          const SizedBox(height: 10),
+          Ink(
+            color: Color.fromARGB(255, 234, 22, 206),
+            child: ListTile(
+              title: const Text(
+                "Enlace 5",
+                style: TextStyle(color: Colors.white),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/septima');
+              },
+            ),
+          ),
+          const SizedBox(height: 10),
+          Ink(
+            color: Color.fromARGB(255, 234, 22, 206),
+            child: ListTile(
+              title: const Text(
+                "Enlace 6",
+                style: TextStyle(color: Colors.white),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/octava');
+              },
+            ),
+          ),
+          const SizedBox(height: 10),
+          Ink(
+            color: Color.fromARGB(255, 234, 22, 206),
+            child: ListTile(
+              title: const Text(
+                "Enlace 7",
+                style: TextStyle(color: Colors.white),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/novena');
               },
             ),
           ),
