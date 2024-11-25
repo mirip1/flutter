@@ -54,7 +54,7 @@ class _PublicacionesState extends State<Publicaciones> {
 
         _selectedIndex == 0
             ? SizedBox(
-                height: 290,
+                height: 280,
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 180,
@@ -62,10 +62,12 @@ class _PublicacionesState extends State<Publicaciones> {
                     mainAxisSpacing: 0,
                   ),
                   itemBuilder: (context, index) => const ContainerWidget(),
+                  itemCount: 20,
+
                 ),
               )
             : SizedBox(
-                height: 290,
+                height: 280,
                 child: GridView.builder(
                   gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 300,
@@ -74,7 +76,7 @@ class _PublicacionesState extends State<Publicaciones> {
                     mainAxisSpacing: 0,
                   ),
                   itemBuilder: (context, index) => const ContainerWidget2(),
-                  itemCount: 10,
+                  itemCount: 20,
                 ),
               ),
       ],

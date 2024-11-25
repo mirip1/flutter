@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'menuLateral.dart'; 
+import 'menuLateral.dart';
 
 class Enlace7 extends StatefulWidget {
   const Enlace7({super.key});
@@ -9,23 +9,21 @@ class Enlace7 extends StatefulWidget {
 }
 
 class _Enlace7State extends State<Enlace7> {
-
   int _contador = 0;
 
- 
   void _incrementar() {
     setState(() {
       _contador++;
     });
   }
 
-
   void _decrementar() {
-    setState(() {
-      _contador--;
-    });
+    if (_contador != 0) {
+      setState(() {
+        _contador--;
+      });
+    } 
   }
-
 
   void _reiniciar() {
     setState(() {
@@ -39,14 +37,13 @@ class _Enlace7State extends State<Enlace7> {
       appBar: AppBar(
         title: const Text("Sexta pantalla"),
       ),
-      drawer: const MenuLateral(),  
+      drawer: const MenuLateral(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(height: 100),
-  
             Text(
               'Contador: $_contador',
               style: const TextStyle(fontSize: 40),
@@ -72,9 +69,6 @@ class _Enlace7State extends State<Enlace7> {
               child: const Text('Reiniciar'),
             ),
             const SizedBox(height: 40),
-
-          
-            
           ],
         ),
       ),

@@ -102,7 +102,7 @@ class Enlace6 extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(width: 20),
+                SizedBox(width: 10),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

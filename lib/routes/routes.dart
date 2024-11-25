@@ -1,15 +1,4 @@
-import 'package:ejerciciotres/screens/enlace5.dart';
-import 'package:ejerciciotres/screens/enlace6.dart';
-
-import 'package:ejerciciotres/screens/enlace7.dart';
-import 'package:flutter/material.dart';
-import 'package:ejerciciotres/screens/home_screen.dart';
-import 'package:ejerciciotres/screens/paginaUsuario.dart';
-import 'package:ejerciciotres/screens/enlace1.dart';
-import 'package:ejerciciotres/screens/enlace2.dart';
-import 'package:ejerciciotres/screens/enlace3.dart';
-import 'package:ejerciciotres/screens/enlace4.dart';
-
+import 'package:ejerciciotres/screens/screen.dart';
 
 
 final Map<String, WidgetBuilder> appRoutes = {

@@ -44,6 +44,8 @@ class _Juego extends State<Juego> {
           } else {
             puntos -= 2;
             tiempo = 3;
+            
+ 
             getRandomPosition();
           }
         });
@@ -123,6 +125,7 @@ class _Juego extends State<Juego> {
             duration: const Duration(seconds: 2),
           ),
         );
+        
       }
     });
   }
