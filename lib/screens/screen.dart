@@ -9,3 +9,4 @@ export 'package:ejerciciotres/screens/enlace1.dart';
 export 'package:ejerciciotres/screens/enlace2.dart';
 export 'package:ejerciciotres/screens/enlace3.dart';
 export 'package:ejerciciotres/screens/enlace4.dart';
+export 'package:ejerciciotres/screens/juegoSieteYMedia.dart';

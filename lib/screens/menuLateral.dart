@@ -9,14 +9,20 @@ class MenuLateral extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 255, 144, 240),
       child: ListView(
         children: <Widget>[
-          const UserAccountsDrawerHeader(
-            accountName: Text("Empresa"),
-            accountEmail: Text("mivelfer5@gmail.com.com"),
-            decoration: BoxDecoration(
+          const SizedBox(
+            height: 100, // Ajusta la altura según lo necesario
+            child: UserAccountsDrawerHeader(
+              accountName: Text("Empresa"),
+              accountEmail: Text("mivelfer5@gmail.com"),
+              decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: NetworkImage(
-                        "https://wallpapers.com/images/featured/paisajes-2iz0murq98x75o3c.jpg"),
-                    fit: BoxFit.cover)),
+                  image: NetworkImage(
+                    "https://wallpapers.com/images/featured/paisajes-2iz0murq98x75o3c.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
           ),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
@@ -27,6 +33,19 @@ class MenuLateral extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.pushNamed(context, '/');
+              },
+            ),
+          ),
+           const SizedBox(height: 10),
+          Ink(
+            color: Color.fromARGB(255, 234, 22, 206),
+            child: ListTile(
+              title: const Text(
+                "Siete Y Media",
+                style: TextStyle(color: Colors.white),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/decima');
               },
             ),
           ),
@@ -121,6 +140,7 @@ class MenuLateral extends StatelessWidget {
               },
             ),
           ),
+         
           const SizedBox(height: 10),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
@@ -134,6 +154,7 @@ class MenuLateral extends StatelessWidget {
               },
             ),
           ),
+          
         ],
       ),
     );
