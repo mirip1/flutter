@@ -17,7 +17,7 @@ class Historias extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 75, // Altura total para las historias (imagen + texto)
+      height: 75, 
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: historias.length,

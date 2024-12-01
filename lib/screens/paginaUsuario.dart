@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ejerciciotres/screens/header.dart';
-import 'package:ejerciciotres/screens/iconos.dart';
-import 'package:ejerciciotres/screens/infoUsuarios.dart';
-import 'package:ejerciciotres/screens/menuLateral.dart';
-import 'package:ejerciciotres/screens/historias.dart';
-import 'package:ejerciciotres/screens/publicaciones.dart';
+import 'screen.dart';
 
 
 class PaginaUsuario extends StatelessWidget {
