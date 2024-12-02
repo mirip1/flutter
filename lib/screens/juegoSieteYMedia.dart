@@ -8,17 +8,47 @@ class JuegoSieteYMedia extends StatefulWidget {
 
 class _JuegoSieteYMediaState extends State<JuegoSieteYMedia> {
   final List<Map<String, dynamic>> baraja = [
-    {'carta': '1', 'valor': 1},
-    {'carta': '2', 'valor': 2},
-    {'carta': '3', 'valor': 3},
-    {'carta': '4', 'valor': 4},
-    {'carta': '5', 'valor': 5},
-    {'carta': '6', 'valor': 6},
-    {'carta': '7', 'valor': 7},
-    {'carta': 'Sota', 'valor': 0.5},
-    {'carta': 'Caballo', 'valor': 0.5},
-    {'carta': 'Rey', 'valor': 0.5},
-  ];
+  {'carta': '1 de Oros', 'valor': 1},
+  {'carta': '2 de Oros', 'valor': 2},
+  {'carta': '3 de Oros', 'valor': 3},
+  {'carta': '4 de Oros', 'valor': 4},
+  {'carta': '5 de Oros', 'valor': 5},
+  {'carta': '6 de Oros', 'valor': 6},
+  {'carta': '7 de Oros', 'valor': 7},
+  {'carta': 'Sota de Oros', 'valor': 0.5},
+  {'carta': 'Caballo de Oros', 'valor': 0.5},
+  {'carta': 'Rey de Oros', 'valor': 0.5},
+  {'carta': '1 de Espadas', 'valor': 1},
+  {'carta': '2 de Espadas', 'valor': 2},
+  {'carta': '3 de Espadas', 'valor': 3},
+  {'carta': '4 de Espadas', 'valor': 4},
+  {'carta': '5 de Espadas', 'valor': 5},
+  {'carta': '6 de Espadas', 'valor': 6},
+  {'carta': '7 de Espadas', 'valor': 7},
+  {'carta': 'Sota de Espadas', 'valor': 0.5},
+  {'carta': 'Caballo de Espadas', 'valor': 0.5},
+  {'carta': 'Rey de Espadas', 'valor': 0.5},
+  {'carta': '1 de Copas', 'valor': 1},
+  {'carta': '2 de Copas', 'valor': 2},
+  {'carta': '3 de Copas', 'valor': 3},
+  {'carta': '4 de Copas', 'valor': 4},
+  {'carta': '5 de Copas', 'valor': 5},
+  {'carta': '6 de Copas', 'valor': 6},
+  {'carta': '7 de Copas', 'valor': 7},
+  {'carta': 'Sota de Copas', 'valor': 0.5},
+  {'carta': 'Caballo de Copas', 'valor': 0.5},
+  {'carta': 'Rey de Copas', 'valor': 0.5},
+  {'carta': '1 de Bastos', 'valor': 1},
+  {'carta': '2 de Bastos', 'valor': 2},
+  {'carta': '3 de Bastos', 'valor': 3},
+  {'carta': '4 de Bastos', 'valor': 4},
+  {'carta': '5 de Bastos', 'valor': 5},
+  {'carta': '6 de Bastos', 'valor': 6},
+  {'carta': '7 de Bastos', 'valor': 7},
+  {'carta': 'Sota de Bastos', 'valor': 0.5},
+  {'carta': 'Caballo de Bastos', 'valor': 0.5},
+  {'carta': 'Rey de Bastos', 'valor': 0.5},
+];
 
   List<Map<String, dynamic>> mazo = [];
   List<Map<String, dynamic>> cartasJugador = [];
@@ -48,28 +78,29 @@ class _JuegoSieteYMediaState extends State<JuegoSieteYMedia> {
     });
   }
 
-  void robarCartaJugador() {
-    if (mazo.isNotEmpty && turnoJugador) {
-      setState(() {
-        final carta = mazo.removeLast();
-        cartasJugador.add(carta);
-        puntuacionJugador += carta['valor'];
+ void robarCartaJugador() {
+  if (mazo.isNotEmpty && turnoJugador) {
+    setState(() {
+      final carta = mazo.removeLast();  
+      cartasJugador.add(carta);         
+      puntuacionJugador += carta['valor'];
 
-        if (puntuacionJugador > 7.5) {
-          turnoJugador = false;
-          finalizarRonda();
-        }
-      });
-    }
+      if (puntuacionJugador > 7.5) {
+        turnoJugador = false; 
+        finalizarRonda();
+      }
+    });
   }
+}
 
-  void robarCartaMaquina() {
-    while (puntuacionMaquina < 5.5 && mazo.isNotEmpty) {
-      final carta = mazo.removeLast();
-      cartasMaquina.add(carta);
-      puntuacionMaquina += carta['valor'];
-    }
+void robarCartaMaquina() {
+  while (puntuacionMaquina < 5.5 && mazo.isNotEmpty) {
+    final carta = mazo.removeLast();  
+    cartasMaquina.add(carta);         
+    puntuacionMaquina += carta['valor'];
   }
+}
+
 
   void plantarJugador() {
     if (turnoJugador) {

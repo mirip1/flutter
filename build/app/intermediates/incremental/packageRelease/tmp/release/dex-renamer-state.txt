@@ -1,4 +1,4 @@
-#Sun Dec 01 11:47:00 CET 2024
+#Mon Dec 02 14:20:40 CET 2024
 base.0=/home/miguel/flutter/flutter/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
