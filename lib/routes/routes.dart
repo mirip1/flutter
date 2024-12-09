@@ -12,4 +12,5 @@ final Map<String, WidgetBuilder> appRoutes = {
   '/octava': (context) => const Enlace6(),
   '/novena': (context) => const Enlace7(),
   '/decima': (context) => JuegoSieteYMedia(),
+  '/ejercicio5': (context) =>  FormularioPage(),
 };

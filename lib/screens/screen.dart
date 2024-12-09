@@ -16,3 +16,4 @@ export 'package:ejerciciotres/screens/infoUsuarios.dart';
 export 'package:ejerciciotres/screens/menuLateral.dart';
 export 'package:ejerciciotres/screens/historias.dart';
 export 'package:ejerciciotres/screens/publicaciones.dart';
+export 'package:ejerciciotres/screens/formulario.dart';

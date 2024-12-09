@@ -36,7 +36,20 @@ class MenuLateral extends StatelessWidget {
               },
             ),
           ),
-           const SizedBox(height: 10),
+          const SizedBox(height: 10),
+          Ink(
+            color: Color.fromARGB(255, 234, 22, 206),
+            child: ListTile(
+              title: const Text(
+                "Formulario ",
+                style: TextStyle(color: Colors.white),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/ejercicio5');
+              },
+            ),
+          ),
+          const SizedBox(height: 10),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
             child: ListTile(
@@ -140,7 +153,6 @@ class MenuLateral extends StatelessWidget {
               },
             ),
           ),
-         
           const SizedBox(height: 10),
           Ink(
             color: Color.fromARGB(255, 234, 22, 206),
@@ -154,7 +166,6 @@ class MenuLateral extends StatelessWidget {
               },
             ),
           ),
-          
         ],
       ),
     );
